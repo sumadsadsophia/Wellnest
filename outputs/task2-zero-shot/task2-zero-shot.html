@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A little space for college students to build healthier daily habits."
+    />
+    <meta name="theme-color" content="#f7f7f2" />
+    <title>Wellnest — your daily reset</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Wellnest home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 26s-9-5.4-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.6-9 12-9 12Z" fill="currentColor" />
+            <path d="M11 16h3l2-4 3 8 2-4h2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+          </svg>
+        </span>
+        <span>wellnest<span class="brand-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#today">My day</a>
+        <a class="nav-link" href="#habits">My habits</a>
+        <a class="nav-link" href="#tips">Little reminders</a>
+      </nav>
+      <a class="topbar-note" href="#today">
+        <span class="sun-icon" aria-hidden="true">☼</span>
+        <span>One day at a time</span>
+      </a>
+    </header>
+
+    <main class="page-shell" id="today">
+      <section class="welcome-row" aria-labelledby="welcome-title">
+        <div>
+          <p class="eyebrow" id="today-date"></p>
+          <h1 id="welcome-title">A softer kind of <span>productive.</span></h1>
+          <p class="welcome-copy">You’re doing a lot. Let’s make a little room for you, too.</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <span class="art-sun"></span>
+          <span class="art-leaf leaf-one"></span>
+          <span class="art-leaf leaf-two"></span>
+          <span class="art-leaf leaf-three"></span>
+          <span class="art-pot"></span>
+        </div>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Your daily wellness dashboard">
+        <article class="card habits-card" id="habits">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">YOUR DAILY RESET</p>
+              <h2>Small things, <span>big difference.</span></h2>
+            </div>
+            <span class="streak-pill"><span aria-hidden="true">✳</span> Keep your own pace</span>
+          </div>
+          <p class="section-description">Choose what feels doable today. Every little check-in counts.</p>
+          <div class="habit-list" id="habit-list" aria-live="polite"></div>
+          <div class="card-bottom">
+            <p>Progress isn’t all-or-nothing. <strong>Showing up is enough.</strong></p>
+            <button class="text-button" id="reset-button" type="button">Start fresh</button>
+          </div>
+        </article>
+
+        <aside class="side-column">
+          <article class="card progress-card" aria-labelledby="progress-title">
+            <div class="progress-copy">
+              <p class="eyebrow">TODAY, SO FAR</p>
+              <h2 id="progress-title">Look at you<br />showing up.</h2>
+              <p><span id="progress-count">0 of 5</span> little wins</p>
+            </div>
+            <div class="progress-ring" id="progress-ring" role="img" aria-label="0% of today's habits completed">
+              <div class="ring-inner">
+                <span id="progress-percent">0%</span>
+                <small>complete</small>
+              </div>
+            </div>
+            <div class="progress-note"><span aria-hidden="true">✦</span> Your pace is the right pace.</div>
+          </article>
+
+          <article class="card tip-card" id="tips">
+            <div class="tip-topline">
+              <span class="tip-icon" aria-hidden="true">✳</span>
+              <span class="eyebrow">A LITTLE REMINDER</span>
+              <span class="tip-number" id="tip-number">01 / 04</span>
+            </div>
+            <p class="tip-quote" id="tip-text">A few sips of water can be a nice reset between classes.</p>
+            <div class="tip-footer">
+              <span>Take what you need.</span>
+              <button class="next-tip" id="next-tip" type="button" aria-label="Show another wellness reminder">
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <footer class="page-footer">
+        <span class="footer-flower" aria-hidden="true">✿</span>
+        <p>Wellness isn’t another thing to get right. <strong>It’s a way to be kind to yourself.</strong></p>
+        <span class="footer-location">MADE FOR STUDENT LIFE <span aria-hidden="true">·</span> BOAC, MARINDUQUE</span>
+      </footer>
+    </main>
+  </body>
+</html>

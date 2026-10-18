@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A gentle daily wellness check-in for college students and young adults in Boac, Marinduque."
+    />
+    <meta name="theme-color" content="#f7f8f3" />
+    <title>Wellnest — a little room to feel well</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Wellnest home">
+        <span class="brand-icon" aria-hidden="true">w</span>
+        <span>wellnest<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#my-day">My day</a>
+        <a href="#small-habits">Small habits</a>
+        <a href="#friendly-reminders">Friendly reminders</a>
+      </nav>
+      <span class="header-note"><span aria-hidden="true">✳</span> A little at a time</span>
+    </header>
+
+    <main id="home">
+      <section class="hero page-width" id="my-day" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="today-label">A FRESH PAGE FOR TODAY</p>
+          <h1 id="welcome-title">Make a little<br />room for <span>yourself.</span></h1>
+          <p class="hero-description">
+            College can be a lot. Take a moment to check in, choose what feels
+            doable, and let the small things count.
+          </p>
+          <a class="hero-link" href="#small-habits">Take a breath and begin <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="illustration-sun"></div>
+          <div class="illustration-window">
+            <div class="window-crossbar"></div>
+            <div class="window-plant">
+              <span class="plant-leaf leaf-a"></span>
+              <span class="plant-leaf leaf-b"></span>
+              <span class="plant-leaf leaf-c"></span>
+              <span class="plant-leaf leaf-d"></span>
+              <span class="plant-stem"></span>
+              <span class="plant-pot"></span>
+            </div>
+          </div>
+          <span class="illustration-sparkle sparkle-one">✳</span>
+          <span class="illustration-sparkle sparkle-two">✦</span>
+          <span class="illustration-caption">A slower moment is still a good moment.</span>
+        </div>
+      </section>
+
+      <section class="dashboard page-width" aria-label="Daily wellness dashboard">
+        <section class="panel habits-panel" id="small-habits" aria-labelledby="habits-title">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">YOUR DAILY CHECK-IN</p>
+              <h2 id="habits-title">Small habits, softer days.</h2>
+            </div>
+            <span class="pace-tag"><span aria-hidden="true">♡</span> No perfect days needed</span>
+          </div>
+          <p class="section-intro">Pick a few gentle ways to care for yourself today.</p>
+
+          <fieldset class="habit-list">
+            <legend class="visually-hidden">Today's wellness activities</legend>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">💧</span>
+              <span class="habit-description">
+                <span class="habit-name">Have a glass of water</span>
+                <span class="habit-detail">A refreshing pause between classes</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="water" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🌿</span>
+              <span class="habit-description">
+                <span class="habit-name">Stretch or take a short walk</span>
+                <span class="habit-detail">A little movement, at your own pace</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="movement" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">☁️</span>
+              <span class="habit-description">
+                <span class="habit-name">Step away from studying for a bit</span>
+                <span class="habit-detail">Rest your eyes and let your mind wander</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="study-break" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🍊</span>
+              <span class="habit-description">
+                <span class="habit-name">Enjoy a nourishing meal or snack</span>
+                <span class="habit-detail">Something simple is still something</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="nourishment" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🌙</span>
+              <span class="habit-description">
+                <span class="habit-name">Give yourself time to wind down</span>
+                <span class="habit-detail">Make a little space before bedtime</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="wind-down" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">📖</span>
+              <span class="habit-description">
+                <span class="habit-name">Pause for a study break</span>
+                <span class="habit-detail"><span class="habit-category">Study Routine</span> · Step away, stretch, or rest your eyes.</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="study-pause" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🍎</span>
+              <span class="habit-description">
+                <span class="habit-name">Enjoy a nourishing snack</span>
+                <span class="habit-detail"><span class="habit-category">Nourishment</span> · Choose something simple between classes.</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="nourishing-snack" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🌜</span>
+              <span class="habit-description">
+                <span class="habit-name">Make a bedtime wind-down</span>
+                <span class="habit-detail"><span class="habit-category">Sleep Routine</span> · Set aside a few quiet minutes before bed.</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="sleep-routine" />
+            </label>
+            <label class="habit-row">
+              <span class="habit-emoji" aria-hidden="true">🌬️</span>
+              <span class="habit-description">
+                <span class="habit-name">Take a mindful breathing pause</span>
+                <span class="habit-detail"><span class="habit-category">Mindfulness</span> · Pause and take a few slow, comfortable breaths.</span>
+              </span>
+              <input class="habit-checkbox" type="checkbox" name="habit" value="mindful-breathing" />
+            </label>
+          </fieldset>
+
+          <div class="habits-footer">
+            <span>Any step forward is worth celebrating.</span>
+            <button class="reset-button" id="reset-button" type="button">Clear check-ins</button>
+          </div>
+        </section>
+
+        <aside class="side-column">
+          <section class="tracker-card" aria-labelledby="tracker-title">
+            <p class="eyebrow">YOUR DAY, YOUR WAY</p>
+            <h2 id="tracker-title">Look at you,<br />showing up.</h2>
+            <p class="tracker-count" aria-live="polite">
+              <strong id="completed-count">0</strong> of <span id="total-count">9</span> little wins
+            </p>
+            <div
+              class="progress-track"
+              id="progress-track"
+              role="progressbar"
+              aria-label="Daily wellness activities completed"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              aria-valuetext="0 percent complete"
+            >
+              <span class="progress-fill" id="progress-fill"></span>
+            </div>
+            <div class="tracker-bottom">
+              <span id="progress-message">There’s no rush. Begin wherever you are.</span>
+              <strong id="completion-percent">0%</strong>
+            </div>
+            <span class="tracker-decoration" aria-hidden="true">✳</span>
+          </section>
+
+          <section class="tips-card" id="friendly-reminders" aria-labelledby="tips-title">
+            <div class="tips-heading">
+              <span class="tips-icon" aria-hidden="true">✿</span>
+              <div>
+                <p class="eyebrow">A FEW GENTLE THOUGHTS</p>
+                <h2 id="tips-title">Friendly reminders</h2>
+              </div>
+            </div>
+            <ul class="tips-list">
+              <li><span aria-hidden="true">01</span><p>Keep water nearby and sip when you remember.</p></li>
+              <li><span aria-hidden="true">02</span><p>Stand up, stretch, or take a short walk between study sessions.</p></li>
+              <li><span aria-hidden="true">03</span><p>A calming wind-down routine can make bedtime feel gentler.</p></li>
+              <li><span aria-hidden="true">04</span><p>A short study break is still a worthwhile break.</p></li>
+            </ul>
+            <p class="tips-note">Just friendly ideas—not medical advice. Take what works for you.</p>
+          </section>
+        </aside>
+      </section>
+
+      <footer class="site-footer page-width">
+        <span class="footer-flower" aria-hidden="true">✿</span>
+        <p>You don’t have to do it all. <strong>Be kind to the person doing their best.</strong></p>
+        <span class="footer-place">A LITTLE WELLNESS SPACE <span aria-hidden="true">·</span> BOAC, MARINDUQUE</span>
+      </footer>
+    </main>
+  </body>
+</html>
